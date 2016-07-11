@@ -69,7 +69,7 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fb-icon" translatesAutoresizingMaskIntoConstraints="NO" id="qQO-41-s8j">
                                                 <rect key="frame" x="0.0" y="22" width="65" height="65"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bH-dN-IGz" customClass="MaterialButton" customModule="firebase_login_practice" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bH-dN-IGz" customClass="MaterialButton" customModule="firebase_login_practice" customModuleProvider="target">
                                                 <rect key="frame" x="105" y="38" width="415" height="33"/>
                                                 <color key="backgroundColor" red="0.11764705882352941" green="0.53333333333333333" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="15"/>
@@ -112,7 +112,7 @@
                                         </constraints>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OAb-Nl-2tm" customClass="MaterialTextField" customModule="firebase_login_practice" customModuleProvider="target">
                                         <rect key="frame" x="20" y="64" width="520" height="35"/>
@@ -134,6 +134,9 @@
                                         <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="15"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <state key="normal" title="Login / Signup"/>
+                                        <connections>
+                                            <action selector="attemptLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OTC-mZ-i0z"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -165,10 +168,33 @@
                             <constraint firstItem="MLf-Kv-dzm" firstAttribute="top" secondItem="bja-g7-AAf" secondAttribute="bottom" constant="20" id="wKE-Za-aYm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="OAb-Nl-2tm" id="ckB-s6-egp"/>
+                        <outlet property="passwordField" destination="mMq-Qa-MDq" id="pWw-WO-zpC"/>
+                        <segue destination="OYR-Is-COf" kind="show" identifier="loggedIn" id="ifi-jy-6Mb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="278" y="339"/>
+            <point key="canvasLocation" x="-68" y="339"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FYb-gq-GAT">
+            <objects>
+                <viewController id="OYR-Is-COf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sqj-ma-BaG"/>
+                        <viewControllerLayoutGuide type="bottom" id="cO0-3M-VSd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="49q-hc-XvL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.40000000000000002" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HId-Ly-eGc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="630" y="339"/>
         </scene>
     </scenes>
     <resources>
