@@ -25,6 +25,8 @@
 		A02446AA1D33364A001CE995 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02446A71D33364A001CE995 /* FBSDKLoginKit.framework */; };
 		A02446AD1D33403B001CE995 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02446AC1D33403B001CE995 /* DataService.swift */; };
 		A02446AF1D334298001CE995 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A02446AE1D334298001CE995 /* GoogleService-Info.plist */; };
+		A02446B11D33E79A001CE995 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02446B01D33E79A001CE995 /* FeedVC.swift */; };
+		A02446B31D33E80B001CE995 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02446B21D33E80B001CE995 /* PostCell.swift */; };
 		DEF459FCA27B8894F9853B37 /* Pods_firebase_login_practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFE9AA462CC29D5C4DE8C4B /* Pods_firebase_login_practice.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,8 @@
 		A02446A71D33364A001CE995 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		A02446AC1D33403B001CE995 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		A02446AE1D334298001CE995 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A02446B01D33E79A001CE995 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		A02446B21D33E80B001CE995 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +119,6 @@
 				A02446901D332B20001CE995 /* View */,
 				A024468F1D332B18001CE995 /* Controller */,
 				A024467D1D332AE3001CE995 /* AppDelegate.swift */,
-				A024467F1D332AE3001CE995 /* ViewController.swift */,
 				A02446811D332AE3001CE995 /* Main.storyboard */,
 				A02446841D332AE3001CE995 /* Assets.xcassets */,
 				A02446861D332AE3001CE995 /* LaunchScreen.storyboard */,
@@ -128,6 +131,8 @@
 		A024468F1D332B18001CE995 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A024467F1D332AE3001CE995 /* ViewController.swift */,
+				A02446B01D33E79A001CE995 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 				A024469B1D332D89001CE995 /* MaterialView.swift */,
 				A02446A01D333110001CE995 /* MaterialButton.swift */,
 				A02446A21D333302001CE995 /* MaterialTextField.swift */,
+				A02446B21D33E80B001CE995 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -317,6 +323,8 @@
 				A02446AD1D33403B001CE995 /* DataService.swift in Sources */,
 				A024469C1D332D89001CE995 /* MaterialView.swift in Sources */,
 				A02446801D332AE3001CE995 /* ViewController.swift in Sources */,
+				A02446B11D33E79A001CE995 /* FeedVC.swift in Sources */,
+				A02446B31D33E80B001CE995 /* PostCell.swift in Sources */,
 				A024467E1D332AE3001CE995 /* AppDelegate.swift in Sources */,
 				A024469F1D332E43001CE995 /* Constants.swift in Sources */,
 				A02446A11D333110001CE995 /* MaterialButton.swift in Sources */,
